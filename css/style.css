@@ -1770,6 +1770,7 @@ form label {
   .overlay1 {
     height: 607px;
   }
+
 }
   /* Content Styling */
   .header-content {
@@ -1814,7 +1815,7 @@ form label {
       font-size: 3vw;
     }
   }
-
+ 
   /* Mobile (≤ 600px) */
   @media (max-width: 600px) {
     #fh5co-header {
@@ -1835,6 +1836,7 @@ form label {
       padding: 8px 16px;
     }
   }
+  
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
