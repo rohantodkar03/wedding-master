@@ -332,6 +332,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
@@ -344,6 +345,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm {
     height: 400px;
+    
   }
 }
 .fh5co-cover.fh5co-cover-sm .display-t,
@@ -356,6 +358,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .fh5co-cover.fh5co-cover-sm .display-t,
   .fh5co-cover.fh5co-cover-sm .display-tc {
     height: 400px;
+    
   }
 }
 
@@ -1682,7 +1685,156 @@ form label {
     display: block;
   }
 }
+  #fh5co-header {
+    background-image: url('images/couple-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
+  /* Dark overlay */
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+@media (max-width: 768px) {
+  .overlay {
+    height: 583px;
+  }
+}
+
+/* Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .overlay {
+    height: 450px;
+  }
+}
+ .overlay1 {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+@media (max-width: 768px) {
+  .overlay1 {
+    height: 607px;
+  }
+}
+
+/* Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .overlay1 {
+    height: 450px;
+  }
+}
+
+/* Very small devices (≤ 320px) */
+@media (max-width: 320px) {
+  .overlay1 {
+    height: 607px;
+  }
+}
+ .overlay2 {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  @media (max-width: 768px) {
+  .overlay1 {
+    height: 607px;
+  }
+}
+
+/* Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .overlay1 {
+    height: 450px;
+  }
+}
+
+/* Very small devices (≤ 320px) */
+@media (max-width: 320px) {
+  .overlay1 {
+    height: 607px;
+  }
+}
+  /* Content Styling */
+  .header-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 0 20px;
+  }
+
+  .header-content h1 {
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+
+  .header-content h2 {
+    font-size: 2vw;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2vw;
+  }
+
+  /* ========== MEDIA QUERIES ========== */
+
+  /* Tablets (≤ 991px) */
+  @media (max-width: 991px) {
+    .header-content h1 {
+      font-size: 6vw;
+    }
+
+    .header-content h2 {
+      font-size: 3.5vw;
+    }
+
+    .btn {
+      font-size: 3vw;
+    }
+  }
+
+  /* Mobile (≤ 600px) */
+  @media (max-width: 600px) {
+    #fh5co-header {
+      height: 80vh;
+      padding: 40px 10px;
+    }
+
+    .header-content h1 {
+      font-size: 8vw;
+    }
+
+    .header-content h2 {
+      font-size: 5vw;
+    }
+
+    .btn {
+      font-size: 4vw;
+      padding: 8px 16px;
+    }
+  }
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
