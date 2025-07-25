@@ -1716,7 +1716,7 @@ form label {
 /* Phones (≤ 480px) */
 @media (max-width: 480px) {
   .overlay {
-    height: 450px;
+    height: 480px;
   }
 }
  .overlay1 {
