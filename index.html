@@ -594,11 +594,7 @@
 				<h3>For Your Booking</h3>
 
 				<!-- Success message -->
-				<?php if($this->session->flashdata('success')): ?>
-					<div class="alert alert-success">
-						<?php echo $this->session->flashdata('success'); ?>
-					</div>
-				<?php endif; ?>
+				
 
 				<form action="<?php echo base_url('BookingController/save'); ?>" method="post">
 					<div class="row form-group">
@@ -644,8 +640,8 @@
 						<h3>Contact Information</h3>
 						<ul>
 							<li class="address">Near Hanuman Mandir, <br>Manpadle,Tal.Hatkanangle,Dist.Kolhapur </li>
-							<li class="phone"><a href="tel://1234567920">7499552591</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">rohantodkar17@gmail.com</a></li>
+							<li class="phone"><a href="tel://7499552591">7499552591</a></li>
+							<li class="email"><a href="rohantodkar17@gmail.com">rohantodkar17@gmail.com</a></li>
 						</ul>
 					</div>
 
