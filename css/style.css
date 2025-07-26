@@ -1712,12 +1712,35 @@ form label {
     height: 583px;
   }
 }
+  @media (max-width: 768px) {
+    .video-wrapper {
+      padding: 0;
+    }
 
+    .video-wrapper video {
+      object-fit: contain;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .video-wrapper video {
+      height: 200px;
+    }
+  }
 /* Phones (≤ 480px) */
 @media (max-width: 480px) {
   .overlay {
-    height: 480px;
+    height: 460px;
   }
+}
+@media (max-width: 320px) {
+  .overlay {
+    height: 460px;
+  }
+}
+@media (max-width: 320px){
+  .fh5co-bg
 }
  .overlay1 {
     position: absolute;
@@ -1768,7 +1791,7 @@ form label {
 /* Very small devices (≤ 320px) */
 @media (max-width: 320px) {
   .overlay1 {
-    height: 607px;
+    height: 481px;
   }
 
 }
@@ -2041,3 +2064,22 @@ form label {
     border-radius: 8px;
     margin-bottom: 30px;
   }
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 40vh; /* Full viewport height */
+  box-sizing: border-box;
+  background-color: #000; /* Optional: background for better visibility */
+}
+
+.video-wrapper video {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 10px; /* Optional: for styling */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Optional: for styling */
+}
